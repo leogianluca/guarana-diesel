@@ -20,12 +20,12 @@ export function Home() {
                 color="white"
                 className="mb-6 font-black"
               >
-                Your story starts with us.
+                {/* Your story starts with us. */}
               </Typography>
               <Typography variant="lead" color="white" className="opacity-80">
-                This is a simple example of a Landing Page you can build using
+                {/* This is a simple example of a Landing Page you can build using
                 Material Tailwind. It features multiple components based on the
-                Tailwind CSS and Material Design by Google.
+                Tailwind CSS and Material Design by Google. */}
               </Typography>
             </div>
           </div>
@@ -81,8 +81,8 @@ export function Home() {
       <section className="px-4 pt-20 pb-48">
         <div className="container mx-auto">
           <PageTitle heading="Parceiros" />
-          <div className="mt-24 grid grid-cols-1 gap-12 gap-x-24 md:grid-cols-2 xl:grid-cols-4">
             <SliderPartner />
+          <div className="mt-24 grid grid-cols-1 gap-12 gap-x-24 md:grid-cols-2 xl:grid-cols-4">
           </div>
         </div>
       </section>
