@@ -78,9 +78,12 @@ export function Home() {
         </div>
       </section>
 
-      <section className="px-4 pt-20 pb-48">
+      <section className="px-4 pt-20 pb-10">
         <div className="container mx-auto">
-          <PageTitle heading="Parceiros" />
+          <PageTitle heading="Nossos Parceiros">
+            <br/>
+            <br/>
+          </PageTitle>
           <SliderPartner />
         </div>
       </section>
