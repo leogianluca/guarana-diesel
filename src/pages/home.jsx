@@ -5,6 +5,7 @@ import { PageTitle, Footer } from "@/widgets/layout";
 import { FeatureCard, TeamCard } from "@/widgets/cards";
 import { featuresData, teamData } from "@/data";
 import SliderPartner from "@/widgets/slider-partner";
+import News from "@/widgets/news";
 
 export function Home() {
   return (
@@ -82,7 +83,6 @@ export function Home() {
         <div className="container mx-auto">
           <PageTitle heading="Nossos Parceiros">
             <br/>
-            <br/>
           </PageTitle>
           <SliderPartner />
         </div>
@@ -94,16 +94,7 @@ export function Home() {
             Descubra as notícias mais recentes e aprofunde seus conhecimentos sobre os setores em que atuamos, enquanto acompanha o
             crescimento e as conquistas da Guaraná Diesel.
           </PageTitle>
-          <div className="mt-24 grid grid-cols-1 gap-12 gap-x-24 md:grid-cols-2 xl:grid-cols-4">
-            {teamData.map(({ img, name, position }) => (
-              <TeamCard
-                key={name}
-                img={img}
-                name={name}
-                position={position}
-              />
-            ))}
-          </div>
+          <News/>
         </div>
       </section>
 

@@ -5,13 +5,12 @@ const year = new Date().getFullYear();
 
 export function Footer({ title, description, socials, menus, copyright }) {
   return (
-    <footer className="relative px-4 pt-8 pb-6" style={{backgroundColor: '#3A3A3A'}}>
+    <footer className="relative px-4 pt-8 pb-6" style={{ backgroundColor: '#3A3A3A' }}>
       <div className="container mx-auto">
         <div className="flex flex-wrap pt-6 text-center lg:text-left">
-          <div className="w-full px-4 lg:w-6/12">
-            <Typography variant="h4" className="mb-4" color="white">
-              {title}
-            </Typography>
+
+          <div className="w-full px-4 lg:w-2/12">
+            <img src="/img/logo.png" alt="Logo" className="mr-4 ml-2 cursor-pointer py-1.5 logo-image w-24 h-24" />
             <Typography className="font-normal white lg:w-2/5">
               {description}
             </Typography>
@@ -32,6 +31,7 @@ export function Footer({ title, description, socials, menus, copyright }) {
               ))}
             </div>
           </div>
+
           <div className="mx-auto mt-12 grid w-max grid-cols-2 gap-24 lg:mt-0">
             {menus.map(({ name, items }) => (
               <div key={name}>
@@ -61,7 +61,34 @@ export function Footer({ title, description, socials, menus, copyright }) {
               </div>
             ))}
           </div>
+
+          <div className="mx-auto mt-12 grid w-max grid-cols-1 gap-24 lg:mt-0">
+            <div>
+              <Typography
+                variant="small"
+                color="white"
+                className="mb-2 block font-medium uppercase"
+              >
+                Endereço:
+              </Typography>
+
+              <ul className="mt-3">
+                <li>
+                  <Typography
+                    rel="noreferrer"
+                    variant="small"
+                    className="mb-2 block font-normal text-white hover:text-white-700"
+                  >
+                    Rua Joaquim Viana, n° 65, Guaraná, Aracruz/ES
+                  </Typography>
+                </li>
+              </ul>
+            </div>
+
+          </div>
+
         </div>
+
         <hr className="my-6 border-white-300" />
         <div className="flex flex-wrap items-center justify-center md:justify-between">
           <div className="mx-auto w-full px-4 text-center">
@@ -91,39 +118,25 @@ Footer.defaultProps = {
   ],
   menus: [
     {
-      name: "useful links",
+      name: "Sobre a empresa",
       items: [
-        { name: "About Us", path: "https://www.creative-tim.com/presentation" },
-        { name: "Blog", path: "https://www.creative-tim.com/blog" },
-        {
-          name: "Github",
-          path: "https://www.github.com/creativetimofficial/material-tailwind?ref=mtk",
-        },
-        {
-          name: "Free Products",
-          path: "https://www.creative-tim.com/templates/free?ref=mtk",
-        },
+        { name: "Sobre Nós", path: "#" },
+        { name: "Serviços", path: "#" },
+        { name: "Notícias", path: "#" },
+        { name: "Fale Conosco", path: "" },
       ],
     },
     {
-      name: "other resources",
+      name: "Acesso Restrito",
       items: [
         {
-          name: "MIT License",
-          path: "https://github.com/creativetimofficial/material-tailwind/blob/main/LICENSE.md?ref=mtk",
+          name: "Acesso Athenas",
+          path: "https://guaranadiesel.athenas.online/Usuarios/login",
         },
         {
-          name: "Contribute",
-          path: "https://github.com/creativetimofficial/material-tailwind/blob/main/CONTRIBUTING.md?ref=mtk",
-        },
-        {
-          name: "Change Log",
-          path: "https://github.com/creativetimofficial/material-tailwind/blob/main/CHANGELOG.md?ref=mtk",
-        },
-        {
-          name: "Contact Us",
-          path: "https://creative-tim.com/contact-us?ref=mtk",
-        },
+          name: "Webmail",
+          path: "https://mail.hostinger.com/",
+        }
       ],
     },
   ],
