@@ -11,9 +11,11 @@ export function Footer({ title, description, socials, menus, copyright }) {
 
           <div className="w-full px-4 lg:w-2/12">
             <img src="/img/logo.png" alt="Logo" className="mr-4 ml-2 cursor-pointer py-1.5 logo-image w-24 h-24" />
+            
             <Typography className="font-normal white lg:w-2/5">
               {description}
             </Typography>
+            
             <div className="mx-auto mt-6 mb-8 flex justify-center gap-2 md:mb-0 lg:justify-start">
               {socials.map(({ color, name, path }) => (
                 <a

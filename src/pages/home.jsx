@@ -15,18 +15,18 @@ export function Home() {
         <div className="absolute top-0 h-full w-full bg-black/60 bg-cover bg-center" />
         <div className="max-w-8xl container relative mx-auto">
           <div className="flex flex-wrap items-center">
-            <div className="ml-auto mr-auto w-full px-4 text-left lg:w-8/12">
+            <div className="px-4 text-left lg:w-8/12">
               <Typography
                 variant="h3"
                 color="white"
                 className="mb-6 font-black"
               >
-                {/* Your story starts with us. */}
+                Conservação de rodovias com excelência.
               </Typography>
               <Typography variant="lead" color="white" className="opacity-80">
-                {/* This is a simple example of a Landing Page you can build using
-                Material Tailwind. It features multiple components based on the
-                Tailwind CSS and Material Design by Google. */}
+              Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+              Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,
+              when an unknown printer took a galley of type
               </Typography>
             </div>
           </div>

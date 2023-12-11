@@ -8,22 +8,22 @@ export const routes = [
   },
   {
     name: "Sobre Nós",
-    path: "/about",
+    path: "/",
     // element: <About />,
   },
   {
     name: "Serviços",
-    path: "/services",
+    path: "/",
     // element: <Services />,
   },
   {
     name: "Notícias",
-    path: "/news",
+    path: "/",
     // element: <News />,
   },
   {
     name: "Fale Conosco",
-    path: "/contact",
+    path: "/",
     // element: <Contact />,
   },
 ];
