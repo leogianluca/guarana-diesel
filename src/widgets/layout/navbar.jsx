@@ -11,7 +11,7 @@ import { Bars3Icon, XMarkIcon } from "@heroicons/react/24/outline";
 
 import logo from "/img/logo.png";
 
-export function Navbar({ brandName, logo, routes, action }) {
+export function Navbar({ logo, routes, action }) {
   const [openNav, setOpenNav] = React.useState(false);
 
   React.useEffect(() => {

@@ -6,11 +6,11 @@ import 'slick-carousel/slick/slick-theme.css';
 const SliderPartner = () => {
   const settings = {
     infinite: true,
-    speed: 5000,
+    speed: 2000,
     slidesToShow: 5,
     slidesToScroll: 1,
     autoplay: true,
-    autoplaySpeed: 5000,
+    autoplaySpeed: 500,
   };
 
   return (
