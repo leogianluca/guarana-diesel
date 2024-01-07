@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import {
   Typography,
   Button,
@@ -10,6 +10,59 @@ import { Footer } from "@/widgets/layout";
 import GoogleMap from "@/widgets/google-map";
 
 export function Contact() {
+  const MIN_NAME_LENGTH = 3;
+  const MIN_MESSAGE_LENGTH = 20;
+  const isAlpha = (str) => /^[A-Za-zÀ-ÖØ-öø-ÿ\s]+$/.test(str);
+  const isEmail = (str) => /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(str);
+
+  const [formValues, setFormValues] = useState({
+    name: '',
+    email: '',
+    message: '',
+  });
+
+  const { name, email, message } = formValues;
+
+  const handleInputChange = (e) => {
+    setFormValues({
+      ...formValues,
+      [e.target.name]: e.target.value,
+    });
+  };
+
+  const handleTextAreaChange = (e) => {
+    setFormValues({
+      ...formValues,
+      message: e.target.value,
+    });
+  };
+
+  const isBlank = (name, email, message) => {
+    if (name === '') {
+      return alert('O nome não pode estar vazio');
+    } else if (email === '') {
+      return alert('O email não pode estar vazio');
+    } else if (message === '') {
+      return alert('A mensagem não pode estar vazia');
+    } else {
+      return alert('O formulário não pode ser enviado em branco');
+    }
+  }
+
+  const handleSubmit = (e) => {
+    e.preventDefault();
+
+    isBlank(name, email, message)
+
+    if (name !== '' && !isAlpha(name)) {
+      return alert('Seu nome deve conter apenas letras');
+    }
+
+    if (email !== '' && !isEmail(email)) {
+      return alert('Digite um e-mail válido');
+    }
+  };
+
   return (
     <>
       <div
@@ -59,16 +112,47 @@ export function Contact() {
 
             <div className="w-full lg:w-1/2 p-8">
               <Typography variant="h3" className="mb-3 font-bold" color="blue-gray">
-                Formulário de contato
+                Contate-nos
               </Typography>
 
               <form className="mx-auto w-full mt-12">
                 <div className="mb-8 flex flex-col gap-8 md:flex-row md:gap-4">
-                  <Input variant="outlined" size="lg" label="Nome Completo" />
-                  <Input variant="outlined" size="lg" label="Email" />
+                  <Input
+                    variant="outlined"
+                    size="lg"
+                    label="Nome Completo"
+                    name="name"
+                    value={name}
+                    onChange={handleInputChange}
+                    minLength={MIN_NAME_LENGTH}
+                    required
+                  />
+
+                  <Input
+                    variant="outlined"
+                    size="lg"
+                    label="Email"
+                    name="email"
+                    value={email}
+                    onChange={handleInputChange}
+                    minLength={MIN_NAME_LENGTH}
+                    required
+                  />
                 </div>
-                <Textarea variant="outlined" size="lg" label="Mensagem" rows={8} />
-                <Button variant="gradient" size="lg" className="mt-8" fullWidth>
+
+                <Textarea
+                  variant="outlined"
+                  size="lg"
+                  label="Mensagem"
+                  rows={8}
+                  name="message"
+                  value={message}
+                  onChange={handleTextAreaChange}
+                  minLength={MIN_MESSAGE_LENGTH}
+                  required
+                />
+
+                <Button variant="gradient" size="lg" className="mt-8" fullWidth onClick={handleSubmit}>
                   Enviar
                 </Button>
               </form>
@@ -77,7 +161,7 @@ export function Contact() {
         </div>
       </section>
 
-      <GoogleMap/>
+      <GoogleMap />
 
       <div className="bg-white">
         <Footer />
