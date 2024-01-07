@@ -7,6 +7,7 @@ import {
 } from "@material-tailwind/react";
 import { PhoneIcon, DevicePhoneMobileIcon, AtSymbolIcon } from "@heroicons/react/24/solid";
 import { Footer } from "@/widgets/layout";
+import GoogleMap from "@/widgets/google-map";
 
 export function Contact() {
   return (
@@ -75,6 +76,8 @@ export function Contact() {
           </div>
         </div>
       </section>
+
+      <GoogleMap/>
 
       <div className="bg-white">
         <Footer />
