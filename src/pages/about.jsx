@@ -1,11 +1,6 @@
 import React from "react";
 import { Typography, Button } from "@material-tailwind/react";
-import { FingerPrintIcon } from "@heroicons/react/24/solid";
 import { PageTitle, Footer } from "@/widgets/layout";
-import { FeatureCard, TeamCard } from "@/widgets/cards";
-import { featuresData, teamData } from "@/data";
-import SliderPartner from "@/widgets/slider-partner";
-import News from "@/widgets/news";
 
 export function About() {
   return (
@@ -16,15 +11,13 @@ export function About() {
 
       <section className="bg-white px-4 pt-12 pb-12">
         <div className="container mx-auto">
-          <div className="mb-6 inline-flex h-16 w-16 items-center justify-center rounded-full bg-blue-gray-900 p-2 text-center shadow-lg">
-            <FingerPrintIcon className="h-8 w-8 text-white" />
-          </div>
           <Typography
             variant="h3"
             className="mb-3 font-bold"
             color="blue-gray"
           >
             Nossa História
+          <hr className="w-16 border-2 border-blue-500 mb-4" />
           </Typography>
 
           <div className="mx-auto mt-32 flex w-full justify-center px-4 md:w-6/12 lg:mt-0">

@@ -64,7 +64,7 @@ export function Footer({ title, description, socials, menus, copyright }) {
             ))}
           </div>
 
-          <div className="mx-auto mt-12 grid w-max grid-cols-1 gap-24 lg:mt-0">
+          <div className="mx-auto mt-6 mb-8 flex justify-center gap-2 md:mb-0 lg:justify-start">
             <div>
               <Typography
                 variant="small"

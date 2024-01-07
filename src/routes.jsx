@@ -1,4 +1,4 @@
-import { Home, About } from "@/pages";
+import { Home, About, Contact } from "@/pages";
 
 export const routes = [
   {
@@ -24,7 +24,7 @@ export const routes = [
   {
     name: "Fale Conosco",
     path: "/fale-conosco",
-    // element: <Contact />,
+    element: <Contact />,
   },
 ];
 
