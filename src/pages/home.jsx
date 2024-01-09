@@ -2,10 +2,10 @@ import React from "react";
 import { Typography, Button } from "@material-tailwind/react";
 import { FingerPrintIcon } from "@heroicons/react/24/solid";
 import { PageTitle, Footer } from "@/widgets/layout";
-import { FeatureCard, TeamCard } from "@/widgets/cards";
-import { featuresData, teamData } from "@/data";
+import { FeatureCard } from "@/widgets/cards";
+import { featuresData } from "@/data";
 import SliderPartner from "@/widgets/slider-partner";
-import News from "@/widgets/news";
+import NewsCard from "@/widgets/news-card";
 
 export function Home() {
   return (
@@ -94,7 +94,7 @@ export function Home() {
             Descubra as notícias mais recentes e aprofunde seus conhecimentos sobre os setores em que atuamos, enquanto acompanha o
             crescimento e as conquistas da Guaraná Diesel.
           </PageTitle>
-          <News/>
+          <NewsCard/>
         </div>
       </section>
 

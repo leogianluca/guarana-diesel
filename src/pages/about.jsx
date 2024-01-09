@@ -1,6 +1,6 @@
 import React from "react";
-import { Typography, Button } from "@material-tailwind/react";
-import { PageTitle, Footer } from "@/widgets/layout";
+import { Typography } from "@material-tailwind/react";
+import { Footer } from "@/widgets/layout";
 
 export function About() {
   return (
