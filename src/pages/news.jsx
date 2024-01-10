@@ -90,7 +90,7 @@ export function News() {
             className="mb-3 font-bold"
             color="blue-gray"
           >
-            Serviços
+            NOTÍCIAS
             <hr className="w-16 border-2 border-blue-500 mb-4" />
           </Typography>
 

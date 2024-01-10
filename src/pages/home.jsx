@@ -24,9 +24,9 @@ export function Home() {
                 Conservação de rodovias com excelência.
               </Typography>
               <Typography variant="lead" color="white" className="opacity-80">
-              Lorem Ipsum is simply dummy text of the printing and typesetting industry.
-              Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,
-              when an unknown printer took a galley of type
+                Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+                Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,
+                when an unknown printer took a galley of type
               </Typography>
             </div>
           </div>
@@ -58,7 +58,7 @@ export function Home() {
                 className="mb-3 font-bold"
                 color="blue-gray"
               >
-                Sobre nós
+                SOBRE NÓS
               </Typography>
               <Typography className="mb-8 font-normal text-justify text-blue-gray-500">
                 A Guarana Diesel, também conhecida como GD Serviços Engenharia e Transportes, é uma empresa
@@ -66,7 +66,13 @@ export function Home() {
                 altamente qualificada e preparada para executar suas tarefas, sempre com o objetivo de proporcionar o melhor resultado
                 possível aos clientes.
               </Typography>
-              <Button variant="filled">Saiba mais</Button>
+
+              <a
+                href="/sobre"
+                rel="noopener noreferrer"
+              >
+                <Button variant="filled">Saiba mais</Button>
+              </a>
             </div>
             <div className="mx-auto mt-24 flex w-full justify-center px-4 md:w-4/12 lg:mt-0">
               <img
@@ -81,8 +87,8 @@ export function Home() {
 
       <section className="px-4 pt-20 pb-10">
         <div className="container mx-auto">
-          <PageTitle heading="Nossos Parceiros">
-            <br/>
+          <PageTitle heading="NOSSOS PARCEIROS">
+            <br />
           </PageTitle>
           <SliderPartner />
         </div>
@@ -90,11 +96,11 @@ export function Home() {
 
       <section className="px-4 pt-20 pb-48">
         <div className="container mx-auto">
-          <PageTitle heading="Notícias">
+          <PageTitle heading="NOTÍCIAS">
             Descubra as notícias mais recentes e aprofunde seus conhecimentos sobre os setores em que atuamos, enquanto acompanha o
             crescimento e as conquistas da Guaraná Diesel.
           </PageTitle>
-          <NewsCard/>
+          <NewsCard />
         </div>
       </section>
 

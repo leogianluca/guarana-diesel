@@ -76,7 +76,7 @@ export function Contact() {
       <section className="bg-white px-4 pt-12 pb-12">
         <div className="container mx-auto">
           <Typography variant="h3" className="mb-3 font-bold" color="blue-gray">
-            Fale Conosco
+            FALE CONOSCO
             <hr className="w-16 border-2 border-blue-500 mb-4" />
           </Typography>
 

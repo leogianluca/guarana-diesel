@@ -122,17 +122,17 @@ Footer.defaultProps = {
     {
       name: "Sobre a empresa",
       items: [
-        { name: "Sobre Nós", path: "#" },
-        { name: "Serviços", path: "#" },
-        { name: "Notícias", path: "#" },
-        { name: "Fale Conosco", path: "" },
+        { name: "Sobre Nós", path: "/sobre" },
+        { name: "Serviços", path: "/servico" },
+        { name: "Notícias", path: "/noticias" },
+        { name: "Fale Conosco", path: "/fale-conosco" },
       ],
     },
     {
       name: "Acesso Restrito",
       items: [
         {
-          name: "Acesso Athenas",
+          name: "Contracheque",
           path: "https://guaranadiesel.athenas.online/Usuarios/login",
         },
         {

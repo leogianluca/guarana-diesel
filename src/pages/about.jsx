@@ -16,7 +16,7 @@ export function About() {
             className="mb-3 font-bold"
             color="blue-gray"
           >
-            Nossa História
+            NOSSA HISTÓRIA
           <hr className="w-16 border-2 border-blue-500 mb-4" />
           </Typography>
 
