@@ -1,79 +1,64 @@
 import React from "react";
 import { Typography } from "@material-tailwind/react";
 import { Footer } from "@/widgets/layout";
-import NewsCard from "@/widgets/news-card";
 
 export function News() {
   const posts = [
     {
       id: 1,
       title: 'Boost your conversion rate',
-      href: '#',
       description:
         'Illo sint voluptas. Error voluptates culpa eligendi. Hic vel totam vitae illo. Non aliquid explicabo necessitatibus unde. Sed exercitationem placeat consectetur nulla deserunt vel. Iusto corrupti dicta.',
       date: 'Dez 11, 2023',
       datetime: '2023-12-11',
-      category: { title: 'Marketing', href: '#' },
     },
     {
       id: 2,
       title: 'Boost your conversion rate',
-      href: '#',
       description:
         'Illo sint voluptas. Error voluptates culpa eligendi. Hic vel totam vitae illo. Non aliquid explicabo necessitatibus unde. Sed exercitationem placeat consectetur nulla deserunt vel. Iusto corrupti dicta.',
       date: 'Dez 11, 2023',
       datetime: '2023-12-11',
-      category: { title: 'Marketing', href: '#' },
     },
     {
       id: 3,
       title: 'Boost your conversion rate',
-      href: '#',
       description:
         'Illo sint voluptas. Error voluptates culpa eligendi. Hic vel totam vitae illo. Non aliquid explicabo necessitatibus unde. Sed exercitationem placeat consectetur nulla deserunt vel. Iusto corrupti dicta.',
       date: 'Dez 11, 2023',
       datetime: '2023-12-11',
-      category: { title: 'Marketing', href: '#' },
     },
     {
       id: 4,
       title: 'Boost your conversion rate',
-      href: '#',
       description:
         'Illo sint voluptas. Error voluptates culpa eligendi. Hic vel totam vitae illo. Non aliquid explicabo necessitatibus unde. Sed exercitationem placeat consectetur nulla deserunt vel. Iusto corrupti dicta.',
       date: 'Dez 11, 2023',
       datetime: '2023-12-11',
-      category: { title: 'Marketing', href: '#' },
     },
     {
       id: 5,
       title: 'Boost your conversion rate',
-      href: '#',
       description:
         'Illo sint voluptas. Error voluptates culpa eligendi. Hic vel totam vitae illo. Non aliquid explicabo necessitatibus unde. Sed exercitationem placeat consectetur nulla deserunt vel. Iusto corrupti dicta.',
       date: 'Dez 11, 2023',
       datetime: '2023-12-11',
-      category: { title: 'Marketing', href: '#' },
     },
     {
       id: 6,
       title: 'Boost your conversion rate',
-      href: '#',
       description:
         'Illo sint voluptas. Error voluptates culpa eligendi. Hic vel totam vitae illo. Non aliquid explicabo necessitatibus unde. Sed exercitationem placeat consectetur nulla deserunt vel. Iusto corrupti dicta.',
       date: 'Dez 11, 2023',
       datetime: '2023-12-11',
-      category: { title: 'Marketing', href: '#' },
     },
     {
       id: 7,
       title: 'Boost your conversion rate',
-      href: '#',
       description:
         'Illo sint voluptas. Error voluptates culpa eligendi. Hic vel totam vitae illo. Non aliquid explicabo necessitatibus unde. Sed exercitationem placeat consectetur nulla deserunt vel. Iusto corrupti dicta.',
       date: 'Dez 11, 2023',
       datetime: '2023-12-11',
-      category: { title: 'Marketing', href: '#' },
     },
   ]
 
@@ -103,16 +88,10 @@ export function News() {
                     <time dateTime={post.datetime} className="text-gray-500">
                       {post.date}
                     </time>
-                    <a
-                      href={post.category.href}
-                      className="relative z-10 rounded-full bg-gray-50 px-3 py-1.5 font-medium text-gray-600 hover:bg-gray-100"
-                    >
-                      {post.category.title}
-                    </a>
                   </div>
                   <div className="group relative">
                     <h3 className="mt-3 text-lg font-semibold leading-6 text-gray-900 group-hover:text-gray-600">
-                      <a href={post.href}>
+                      <a href={'/noticias/'+post.id}>
                         <span className="absolute inset-0" />
                         {post.title}
                       </a>

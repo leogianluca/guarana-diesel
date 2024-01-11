@@ -1,4 +1,4 @@
-import { Home, About, Contact, News } from "@/pages";
+import { Home, About, Contact, News, NewsDetail } from "@/pages";
 
 export const routes = [
   {
@@ -20,6 +20,12 @@ export const routes = [
     name: "Notícias",
     path: "/noticias",
     element: <News />,
+  },
+  {
+    name: "Rota Oculta",
+    path: "/noticias/:id",
+    element: <NewsDetail />,
+    hidden: true,
   },
   {
     name: "Fale Conosco",

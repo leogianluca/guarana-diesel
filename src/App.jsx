@@ -1,12 +1,9 @@
-import { Routes, Route, Navigate, useLocation } from "react-router-dom";
+import { Routes, Route, Navigate } from "react-router-dom";
 import { Navbar } from "@/widgets/layout";
 import routes from "@/routes";
 import ContactBar from "./widgets/layout/contactbar";
 
-
 function App() {
-  const { pathname } = useLocation();
-
   return (
     <>
       <ContactBar />
