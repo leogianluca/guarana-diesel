@@ -1,4 +1,4 @@
-import { model, connect as _connect, disconnect as _disconnect } from "mongoose";
+import mongoose from 'mongoose';
 
 const dbConfig = {
   useNewUrlParser: true,
@@ -16,9 +16,9 @@ class IPostRepository {
 export class PostRepository extends IPostRepository {
   constructor() {
     super();
-    this.postModel = model("Post");
+    this.postModel = mongoose.model("Post");
   }
-
+  
   async getPostById(id) {
     try {
       await this.connect();
@@ -30,10 +30,12 @@ export class PostRepository extends IPostRepository {
       return null;
     }
   }
-
+  
   async getAllPosts(page, pageSize) {
     try {
+      console.log("Iniciando conexão");
       await this.connect();
+      console.log("Fim da conexão");
       const posts = await this.postModel
         .find()
         .skip(page * pageSize)
@@ -46,7 +48,7 @@ export class PostRepository extends IPostRepository {
       return [];
     }
   }
-
+  
   async insertPost(data) {
     try {
       await this.connect();
@@ -59,14 +61,14 @@ export class PostRepository extends IPostRepository {
       return null;
     }
   }
-
+  
   async connect() {
-    await _connect("mongodb://localhost:27017/seu-banco-de-dados", dbConfig);
+    await mongoose.connect("mongodb+srv://leleco:D50rXwQ0dXdO89Ey@cluster0.0czqi.mongodb.net/?retryWrites=true&w=majority", dbConfig);
     console.log("Conexão com o MongoDB estabelecida com sucesso!");
   }
-
+  
   disconnect() {
-    _disconnect();
+    mongoose.connection.close();
     console.log("Conexão com o MongoDB encerrada.");
   }
 }
