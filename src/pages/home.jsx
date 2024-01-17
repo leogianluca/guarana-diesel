@@ -1,4 +1,6 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
+import axios from "axios";
+
 import { Typography, Button } from "@material-tailwind/react";
 import { FingerPrintIcon } from "@heroicons/react/24/solid";
 import { PageTitle, Footer } from "@/widgets/layout";
@@ -8,6 +10,21 @@ import SliderPartner from "@/widgets/slider-partner";
 import NewsCard from "@/widgets/news-card";
 
 export function Home() {
+  const [posts, setPosts] = useState([]);
+
+  useEffect(() => {
+    async function fetchPosts() {
+      try {
+        const response = await axios.get("http://localhost:3000/posts/3");
+        setPosts(response.data);
+      } catch (error) {
+        console.error("Failed to fetch posts:", error);
+      }
+    }
+
+    fetchPosts();
+  }, []);
+
   return (
     <>
       <div className="relative flex content-center items-center justify-center pt-800 pb-32" style={{ height: "70vh" }}>
@@ -94,15 +111,19 @@ export function Home() {
         </div>
       </section>
 
-      <section className="px-4 pt-20 pb-48">
-        <div className="container mx-auto">
-          <PageTitle heading="NOTÍCIAS">
-            Descubra as notícias mais recentes e aprofunde seus conhecimentos sobre os setores em que atuamos, enquanto acompanha o
-            crescimento e as conquistas da Guaraná Diesel.
-          </PageTitle>
-          <NewsCard />
-        </div>
-      </section>
+      {posts && posts.length > 0 ? (
+        <section className="px-4 pt-20 pb-48">
+          <div className="container mx-auto">
+            <PageTitle heading="NOTÍCIAS">
+              Descubra as notícias mais recentes e aprofunde seus conhecimentos sobre os setores em que atuamos, enquanto acompanha o
+              crescimento e as conquistas da Guaraná Diesel.
+            </PageTitle>
+            <NewsCard posts={posts} />
+          </div>
+        </section>
+      ) : (
+        <div className="mb-20" />
+      )}
 
       <div className="bg-white">
         <Footer />
