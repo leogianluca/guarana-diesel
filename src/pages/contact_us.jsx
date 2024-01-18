@@ -12,21 +12,25 @@ import GoogleMap from "@/widgets/google-map";
 export function Contact() {
   const MIN_NAME_LENGTH = 3;
   const MIN_MESSAGE_LENGTH = 20;
+  const MIN_PHONE_LENGHT = 9;
   const isAlpha = (str) => /^[A-Za-zÀ-ÖØ-öø-ÿ\s]+$/.test(str);
   const isEmail = (str) => /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(str);
 
   const [formValues, setFormValues] = useState({
     name: '',
     email: '',
+    phone: '',
     message: '',
   });
 
-  const { name, email, message } = formValues;
+  const { name, email, message, phone } = formValues;
 
   const handleInputChange = (e) => {
     setFormValues({
       ...formValues,
       [e.target.name]: e.target.value,
+      [e.target.email]: e.target.value,
+      [e.target.phone]: e.target.value,
     });
   };
 
@@ -67,10 +71,7 @@ export function Contact() {
     <>
       <div
         className="relative flex content-center items-center justify-center pt-32 pb-0"
-        style={{
-          // height: "0vh",
-          background: "linear-gradient(to right, #0044d0, #4364f7, #6fb1fc)",
-        }}
+        style={{ height: "0vh", background: "#11114e"}}
       />
 
       <section className="bg-white px-4 pt-12 pb-12">
@@ -125,6 +126,18 @@ export function Contact() {
                     value={name}
                     onChange={handleInputChange}
                     minLength={MIN_NAME_LENGTH}
+                    required
+                  />
+                </div>
+                <div className="mb-8 flex flex-col gap-8 md:flex-row md:gap-4">
+                  <Input
+                    variant="outlined"
+                    size="lg"
+                    label="Telefone"
+                    name="phone"
+                    value={phone}
+                    onChange={handleInputChange}
+                    minLength={MIN_PHONE_LENGHT}
                     required
                   />
 

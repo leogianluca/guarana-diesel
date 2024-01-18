@@ -27,7 +27,7 @@ export function Home() {
 
   return (
     <>
-      <div className="relative flex content-center items-center justify-center pt-800 pb-32" style={{ height: "70vh" }}>
+      <div className="relative flex content-center items-center justify-center pt-800 pb-32" style={{ height: "60vh" }}>
         <div className="absolute top-0 h-full w-full bg-[url('/img/background.png')] bg-cover bg-center" />
         <div className="absolute top-0 h-full w-full bg-black/60 bg-cover bg-center" />
         <div className="max-w-8xl container relative mx-auto">
@@ -38,12 +38,12 @@ export function Home() {
                 color="white"
                 className="mb-6 font-black"
               >
-                Conservação de rodovias com excelência.
+                Conservação de rodovias com excelência
               </Typography>
               <Typography variant="lead" color="white" className="opacity-80">
-                Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+                {/* Lorem Ipsum is simply dummy text of the printing and typesetting industry.
                 Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,
-                when an unknown printer took a galley of type
+                when an unknown printer took a galley of type */}
               </Typography>
             </div>
           </div>
@@ -94,8 +94,8 @@ export function Home() {
             <div className="mx-auto mt-24 flex w-full justify-center px-4 md:w-4/12 lg:mt-0">
               <img
                 alt="Card Image"
-                src="/img/teamwork.png"
-                className="h-full w-full"
+                src="/img/about.jpeg"
+                className="h-full w-full rounded"
               />
             </div>
           </div>

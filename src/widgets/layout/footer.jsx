@@ -10,7 +10,7 @@ export function Footer({ title, description, socials, menus, copyright }) {
         <div className="flex flex-wrap pt-6 text-center lg:text-left">
 
           <div className="justify-center w-full px-4 lg:w-2/12">
-            <img src="/img/logo.png" alt="Logo" className="mr-4 ml-2 cursor-pointer py-1.5 logo-image w-24 h-24" />
+            <img src="/img/logo.png" alt="Logo" className="mr-4 ml-2 cursor-pointer py-1.5 logo-image w-25 h-25" />
             
             <Typography className="font-normal white lg:w-2/5">
               {description}

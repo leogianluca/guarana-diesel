@@ -23,7 +23,7 @@ export function News() {
   return (
     <>
       <div className="relative flex content-center items-center justify-center pt-32 pb-0"
-        style={{ height: "0vh", background: "linear-gradient(to right, #0052d4, #4364f7, #6fb1fc)" }}
+        style={{ height: "0vh", background: "#11114e"}}
       />
 
       <section className="bg-white px-4 pt-12 pb-12">
@@ -43,7 +43,7 @@ export function News() {
                 {posts.map((post) => (
                   <a href={'/noticias/' + post._id}>
                     <article key={post._id} className="flex max-w-xl flex-col items-start justify-between">
-                      <img className="rounded-lg w-50 h-50 m-2" src="/img/teamwork.png" alt="Imagem" />
+                      <img className="rounded-lg w-50 h-50 m-2" src={post.imgUrl} alt="Imagem" />
                       <div className="flex items-center gap-x-4 text-xs">
                         <time dateTime={post.datetime} className="text-gray-500">
                           {post.date}

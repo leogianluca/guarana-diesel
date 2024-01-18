@@ -6,7 +6,7 @@ export function About() {
   return (
     <>
       <div className="relative flex content-center items-center justify-center pt-32 pb-0"
-        style={{ height: "0vh", background: "linear-gradient(to right, #0052d4, #4364f7, #6fb1fc)"}}
+        style={{ height: "0vh", background: "#11114e"}}
       />
 
       <section className="bg-white px-4 pt-12 pb-12">
@@ -23,8 +23,8 @@ export function About() {
           <div className="mx-auto mt-32 flex w-full justify-center px-4 md:w-6/12 lg:mt-0">
             <img
               alt="Card Image"
-              src="/img/teamwork.png"
-              className="h-full w-full"
+              src="/img/abount1.png"
+              className="h-full w-full rounded"
             />
           </div>
 

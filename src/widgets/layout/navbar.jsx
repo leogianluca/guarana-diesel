@@ -66,7 +66,7 @@ export function Navbar({ logo, routes, action }) {
     <MTNavbar color="transparent" className="p-3">
       <div className="container mx-auto flex items-center justify-between text-white">
         <Link to="/">
-          <img src={logo} alt="Logo" className="mr-4 ml-2 cursor-pointer py-1.5 logo-image w-24 h-24" />
+          <img src={logo} alt="Logo" className="mr-4 ml-2 cursor-pointer py-1.5 logo-image h-23  bg-white" />
         </Link>
         <div className="hidden lg:block">{navList}</div>
         <IconButton
