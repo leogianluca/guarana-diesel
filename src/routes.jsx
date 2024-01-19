@@ -1,4 +1,16 @@
-import { Home, About, Contact, News, NewsDetail } from "@/pages";
+import {
+  Home,
+  About,
+  Contact,
+  News,
+  NewsDetail,
+  Service,
+  GreenAreas,
+  VerticalSignage,
+  ContainmentDevices,
+  EmbankmentsAndRetainingStructures,
+  DrainageAndOACs,
+} from "@/pages";
 
 export const routes = [
   {
@@ -12,11 +24,6 @@ export const routes = [
     element: <About />,
   },
   {
-    name: "Serviços",
-    path: "/servicos",
-    // element: <Services />,
-  },
-  {
     name: "Notícias",
     path: "/noticias",
     element: <News />,
@@ -28,9 +35,44 @@ export const routes = [
     hidden: true,
   },
   {
+    name: "Serviços",
+    path: "/servicos",
+    element: <Service />,
+  },
+  {
     name: "Fale Conosco",
     path: "/fale-conosco",
     element: <Contact />,
+  },
+  {
+    name: "Serviços",
+    path: "/servicos/areas-verdes",
+    element: <GreenAreas />,
+    hidden: true,
+  },
+  {
+    name: "Serviços",
+    path: "/servicos/sinalizacao-vertical",
+    element: <VerticalSignage />,
+    hidden: true,
+  },
+  {
+    name: "Serviços",
+    path: "/servicos/dispositivos-de-contencao",
+    element: <ContainmentDevices />,
+    hidden: true,
+  },
+  {
+    name: "Serviços",
+    path: "/servicos/terraplenos-e-estruturas-de-contencao",
+    element: <EmbankmentsAndRetainingStructures />,
+    hidden: true,
+  },
+  {
+    name: "Serviços",
+    path: "/servicos/drenagem-e-oacs",
+    element: <DrainageAndOACs />,
+    hidden: true,
   },
 ];
 

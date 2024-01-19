@@ -5,7 +5,7 @@ import {
   Input,
   Textarea,
 } from "@material-tailwind/react";
-import { PhoneIcon, DevicePhoneMobileIcon, AtSymbolIcon } from "@heroicons/react/24/solid";
+import { PhoneIcon, DevicePhoneMobileIcon, AtSymbolIcon, BuildingStorefrontIcon } from "@heroicons/react/24/solid";
 import { Footer } from "@/widgets/layout";
 import GoogleMap from "@/widgets/google-map";
 
@@ -71,7 +71,7 @@ export function Contact() {
     <>
       <div
         className="relative flex content-center items-center justify-center pt-32 pb-0"
-        style={{ height: "0vh", background: "#11114e"}}
+        style={{ height: "0vh", background: "#11114e" }}
       />
 
       <section className="bg-white px-4 pt-12 pb-12">
@@ -107,6 +107,15 @@ export function Contact() {
                     <AtSymbolIcon className="h-5 w-6 text-white" />
                   </div>
                   <span className="ml-2">contato@guaranadiesel.com</span>
+                </div>
+              </Typography>
+
+              <Typography variant="h5" className="mb-10">
+                <div className="mb-6 flex items-center">
+                  <div className="inline-flex h-10 w-10 items-center justify-center rounded-full bg-blue-gray-900 p-2 text-center shadow-lg">
+                    <BuildingStorefrontIcon className="h-5 w-6 text-white" />
+                  </div>
+                  <span className="ml-2">Rua Joaquim Viana, n° 65, Guaraná, Aracruz/ES</span>
                 </div>
               </Typography>
             </div>
