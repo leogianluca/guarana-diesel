@@ -46,10 +46,40 @@ export function Blog() {
     }
   }
 
-  const handleSubmit = (e) => {
+  const handleSubmit = async (e) => {
     e.preventDefault();
 
     isBlank(title, imgUrl, message)
+
+    const imgUrlArray = imgUrl.split(';');
+
+    const formData = {
+      title,
+      imgUrl: imgUrlArray,
+      message,
+    };
+    
+    try {
+      // Envia os dados do formulário para a API usando a função fetch
+      const response = await fetch('http://localhost:3000/posts', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify(formData),
+      });
+
+      // Verifica se a resposta da API é bem-sucedida
+      if (response.ok) {
+        alert('Formulário enviado com sucesso!');
+        // Faça outras ações após o envio bem-sucedido
+      } else {
+        alert('Erro ao enviar o formulário. Por favor, tente novamente.');
+      }
+    } catch (error) {
+      console.error('Erro ao enviar o formulário:', error);
+      alert('Erro ao enviar o formulário. Por favor, tente novamente.');
+    }
   };
 
   return (
