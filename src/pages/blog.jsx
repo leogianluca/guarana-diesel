@@ -5,27 +5,25 @@ import {
   Input,
   Textarea,
 } from "@material-tailwind/react";
+import axios from "axios";
 
 export function Blog() {
-  const MIN_NAME_LENGTH = 3;
+  const MIN_TITLE_LENGTH = 3;
   const MIN_MESSAGE_LENGTH = 20;
-  const MIN_PHONE_LENGHT = 9;
 
   const [formValues, setFormValues] = useState({
-    name: '',
-    email: '',
-    phone: '',
+    title: '',
+    imgUrl: '',
     message: '',
   });
 
-  const { name, email, message, phone } = formValues;
+  const { title, imgUrl, message } = formValues;
 
   const handleInputChange = (e) => {
     setFormValues({
       ...formValues,
-      [e.target.name]: e.target.value,
-      [e.target.email]: e.target.value,
-      [e.target.phone]: e.target.value,
+      [e.target.title]: e.target.value,
+      [e.target.imgUrl]: e.target.value,
     });
   };
 
@@ -36,13 +34,13 @@ export function Blog() {
     });
   };
 
-  const isBlank = (name, email, message) => {
-    if (name === '') {
-      return alert('O nome não pode estar vazio');
-    } else if (email === '') {
-      return alert('O email não pode estar vazio');
+  const isBlank = (title, imgUrl, message) => {
+    if (title === '') {
+      return alert('O título não pode estar vazio');
+    } else if (imgUrl === '') {
+      return alert('As links das imagens não podem estar vazios');
     } else if (message === '') {
-      return alert('A mensagem não pode estar vazia');
+      return alert('A descrição não pode estar vazia');
     } else {
       return alert('O formulário não pode ser enviado em branco');
     }
@@ -51,7 +49,7 @@ export function Blog() {
   const handleSubmit = (e) => {
     e.preventDefault();
 
-    isBlank(name, email, message)
+    isBlank(title, imgUrl, message)
   };
 
   return (
@@ -60,59 +58,65 @@ export function Blog() {
         style={{ height: "0vh", background: "#11114e" }}
       />
 
-
-      <form className="mx-auto w-full mt-12">
-        <div className="mb-8 flex flex-col gap-8 md:flex-row md:gap-4">
-          <Input
-            variant="outlined"
-            size="lg"
-            label="Nome Completo"
-            name="name"
-            value={name}
-            onChange={handleInputChange}
-            minLength={MIN_NAME_LENGTH}
-            required
-          />
+      <section className="bg-white px-4 pt-12">
+        <div className="container mx-auto">
+          <Typography
+            variant="h3"
+            className="mb-3 font-bold"
+            color="blue-gray"
+          >
+            NOVA PUBLICAÇÃO
+            <hr className="w-16 border-2 border-blue-500 mb-4" />
+          </Typography>
         </div>
-        <div className="mb-8 flex flex-col gap-8 md:flex-row md:gap-4">
-          <Input
-            variant="outlined"
-            size="lg"
-            label="Telefone"
-            name="phone"
-            value={phone}
-            onChange={handleInputChange}
-            minLength={MIN_PHONE_LENGHT}
-          />
+      </section>
 
-          <Input
-            variant="outlined"
-            size="lg"
-            label="Email"
-            name="email"
-            value={email}
-            onChange={handleInputChange}
-            minLength={MIN_NAME_LENGTH}
-            required
-          />
+      <section className="bg-white px-4 pb-12">
+        <div className="container mx-auto">
+          <form className="mx-auto w-full mt-12">
+            <div className="mb-8 flex flex-col gap-8 md:flex-row md:gap-4">
+              <Input
+                variant="outlined"
+                size="lg"
+                label="Título"
+                name="title"
+                value={title}
+                onChange={handleInputChange}
+                minLength={MIN_TITLE_LENGTH}
+                required
+              />
+            </div>
+
+            <div className="mb-8 flex flex-col gap-8 md:flex-row md:gap-4">
+              <Input
+                variant="outlined"
+                size="lg"
+                label="Links das imagens"
+                name="imgUrl"
+                value={imgUrl}
+                onChange={handleInputChange}
+                required
+              />
+            </div>
+
+            <Textarea
+              variant="outlined"
+              size="lg"
+              label="Mensagem"
+              rows={8}
+              name="message"
+              value={message}
+              onChange={handleTextAreaChange}
+              minLength={MIN_MESSAGE_LENGTH}
+              required
+            />
+
+            <Button variant="gradient" size="lg" className="mt-8" fullWidth onClick={handleSubmit}>
+              Enviar
+            </Button>
+          </form>
         </div>
-
-        <Textarea
-          variant="outlined"
-          size="lg"
-          label="Mensagem"
-          rows={8}
-          name="message"
-          value={message}
-          onChange={handleTextAreaChange}
-          minLength={MIN_MESSAGE_LENGTH}
-          required
-        />
-
-        <Button variant="gradient" size="lg" className="mt-8" fullWidth onClick={handleSubmit}>
-          Enviar
-        </Button>
-      </form>
+      </section>
     </>
   );
 };

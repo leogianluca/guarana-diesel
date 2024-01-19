@@ -26,21 +26,26 @@ const SliderPartner = () => {
       <div className="w-20 h-20">
         <img className="w-full h-full object-scale-down" src='/img/partner/eco135.png' alt="Partner" />
       </div>
-      
-      <div className="w-20 h-20">
-        <img className="w-full h-full object-scale-down" src='/img/partner/emflora.png' alt="Partner" />
-      </div>
-      
-      <div className="w-20 h-20">
-        <img className="w-full h-full object-scale-down" src='/img/partner/grupo_grazioti.jpg' alt="Partner" />
-      </div>
-      
+
       <div className="w-20 h-20">
         <img className="w-full h-full object-scale-down" src='/img/partner/ecoriominas.png' alt="Partner" />
       </div>
       
       <div className="w-20 h-20">
         <img className="w-full h-full object-scale-down" src='/img/partner/ecovias_do_araguaia.png' alt="Partner" />
+      </div>
+      
+      
+      <div className="w-20 h-20">
+        <img className="w-full h-full object-scale-down" src='/img/partner/ecopistas.png' alt="Partner" />
+      </div>
+
+      <div className="w-20 h-20">
+        <img className="w-full h-full object-scale-down" src='/img/partner/emflora.png' alt="Partner" />
+      </div>
+      
+      <div className="w-20 h-20">
+        <img className="w-full h-full object-scale-down" src='/img/partner/grupo_grazioti.jpg' alt="Partner" />
       </div>
       
       <div className="w-20 h-20">
@@ -58,6 +63,11 @@ const SliderPartner = () => {
       <div className="w-20 h-20">
         <img className="w-full h-full object-scale-down" src='/img/partner/suzano.png' alt="Partner" />
       </div>
+      
+      <div className="w-20 h-20">
+        <img className="w-full h-full object-scale-down" src='/img/partner/vermelho.png' alt="Partner" />
+      </div>
+      
     </Slider>
   );
 };
