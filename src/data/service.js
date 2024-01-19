@@ -39,4 +39,12 @@ export const serviceData = [
     O Sistema de drenagem de uma rodovia tem por objetivo a captação e remoção das águas que escoam superficialmente sobre as estradas e
     faixa adjacentes. Sendo que as águas superficiais são captadas e...`
   },
+  {
+    title: "Manutenção e Teste de Fumaça em Veículos Pesados",
+    imgUrl: "",
+    redirect: "",
+    description: `
+    Oficina própria especializada em manutenção mecânica de máquinas e veículos pesados.
+    E avaliação de opacidade (fumaça preta) com emissão de ART.`
+  },
 ]

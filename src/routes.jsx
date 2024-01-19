@@ -79,7 +79,7 @@ export const routes = [
     name: "Blog",
     path: "/restrito/post",
     element: <Blog />,
-    hidden: true,
+    // hidden: true,
   },
 ];
 
