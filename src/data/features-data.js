@@ -8,22 +8,22 @@ import {
 export const featuresData = [
   {
     color: "gray",
-    title: "Credibilidade e transparência corporativa",
+    title: "CREDIBILIDADE E TRANSPARÊNCIA CORPORATIVA",
     icon: IdentificationIcon,
   },
   {
     color: "gray",
-    title: "Comprometimento com a missão",
+    title: "COMPROMETIMENTO COM A MISSÃO",
     icon: BriefcaseIcon,
   },
   {
     color: "gray",
-    title: "Responsabilidade socioambiental",
+    title: "RESPONSABILIDADE SOCIOAMBIENTAL",
     icon: GlobeAmericasIcon,
   },
   {
     color: "gray",
-    title: "Valorização das pessoas e da vida",
+    title: "VALORIZAÇÃO DAS PESSOAS E DA VIDA",
     icon: UserGroupIcon,
   },
 ];

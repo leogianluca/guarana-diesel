@@ -6,7 +6,7 @@ export function About() {
   return (
     <>
       <div className="relative flex content-center items-center justify-center pt-32 pb-0"
-        style={{ height: "0vh", background: "#11114e"}}
+        style={{ height: "0vh", background: "#11114e" }}
       />
 
       <section className="bg-white px-4 pt-12 pb-12">
@@ -17,7 +17,7 @@ export function About() {
             color="blue-gray"
           >
             NOSSA HISTÓRIA
-          <hr className="w-16 border-2 border-blue-500 mb-4" />
+            <hr className="w-16 border-2 border-blue-500 mb-4" />
           </Typography>
 
           <div className="mx-auto mt-32 flex w-full justify-center px-4 md:w-6/12 lg:mt-0">
@@ -53,6 +53,79 @@ export function About() {
               </p>
             </Typography>
           </div>
+
+          <div className="mt-8 mb-8">
+            <Typography
+              variant="h3"
+              className="mb-3 font-bold"
+              color="blue-gray"
+            >
+              MISSÃO
+              <hr className="w-16 border-2 border-blue-500 mb-4" />
+            </Typography>
+
+            <div className="mt-12 flex flex-wrap items-center mb-8">
+              <Typography className="mb-8 text-justify text-black-500 leading-10">
+                <p>
+                  <a className="pl-8">Administrar</a> as rodovias brasileiras com excelência e responsabilidade socioambiental, de forma a proporcionar o melhor e mais seguro caminho aos usuários.
+                </p>
+              </Typography>
+            </div>
+          </div>
+
+          <div className="mt-8 mb-8">
+            <Typography
+              variant="h3"
+              className="mb-3 font-bold"
+              color="blue-gray"
+            >
+              VISÃO
+              <hr className="w-16 border-2 border-blue-500 mb-4" />
+            </Typography>
+
+            <div className="mt-12 flex flex-wrap items-center">
+              <Typography className="mb-8 text-justify text-black-500 leading-10">
+                <p>
+                  <a className="pl-8">Ser</a> reconhecida como a melhor concessionária de rodovias brasileiras pela qualidade e segurança de atendimento e prestação de serviços de excelência.
+                </p>
+              </Typography>
+            </div>
+          </div>
+
+          <div className="mt-8 mb-8">
+            <Typography
+              variant="h3"
+              className="mb-3 font-bold"
+              color="blue-gray"
+            >
+              VALORES
+              <hr className="w-16 border-2 border-blue-500 mb-4" />
+            </Typography>
+
+            <ul class="list-disc list-inside space-y-2  leading-10">
+              <li>
+                <strong>Ética: </strong>
+                Respeito mútuo entre líderes e liderados, integrantes e usuários, fornecedores e sociedade, empresa e comunidades, mantendo as relações fundadas na honestidade, empatia e cooperação para garantir o bom clima no ambiente de trabalho e imagem organizacional positiva.
+              </li>
+              <li>
+                <strong>Credibilidade e transparência corporativa: </strong>
+                Zelar pela reputação da empresa e pelo compromisso com a verdade e transparência das inter-relações com usuários, acionistas, integrantes, fornecedores e sociedade.
+              </li>
+              <li>
+                <strong>Comprometimento com a missão: </strong>
+                Buscar a melhor performance na prestação de serviço e no atendimento aos diversos públicos de relacionamento.
+              </li>
+              <li>
+                <strong>Responsabilidade socioambiental: </strong>
+                Buscar a promoção do desenvolvimento sustentável da empresa por meio do atendimento a requisitos legais, ambientais e sociais, monitoramento da fauna e coleta seletiva.
+              </li>
+              <li>
+                <strong>Valorização das pessoas e da vida: </strong>
+                Tratar com respeito todos os integrantes numa política de desenvolvimento profissional e de qualidade de vida. Saúde e segurança são responsabilidades de todos e o caráter preventivo deve prevalecer no exercício da atividade profissional.
+              </li>
+            </ul>
+          </div>
+
         </div>
       </section>
 
