@@ -21,9 +21,6 @@ export function FeatureCard({ color, icon, title, description }) {
         <Typography variant="h5" className="mb-2" color="blue-gray">
           {title}
         </Typography>
-        <Typography className="font-normal text-blue-gray-600">
-          {description}
-        </Typography>
       </CardBody>
     </Card>
   );

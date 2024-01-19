@@ -1,31 +1,30 @@
 import {
-  ChatBubbleBottomCenterTextIcon,
+  IdentificationIcon,
+  UserGroupIcon,
+  BriefcaseIcon,
+  GlobeAmericasIcon,
 } from "@heroicons/react/24/solid";
 
 export const featuresData = [
   {
     color: "gray",
-    title: "Title",
-    icon: ChatBubbleBottomCenterTextIcon,
-    description: "Adicionar título",
+    title: "Credibilidade e transparência corporativa",
+    icon: IdentificationIcon,
   },
   {
     color: "gray",
-    title: "Title",
-    icon: ChatBubbleBottomCenterTextIcon,
-    description: "Adicionar título",
+    title: "Comprometimento com a missão",
+    icon: BriefcaseIcon,
   },
   {
     color: "gray",
-    title: "Title",
-    icon: ChatBubbleBottomCenterTextIcon,
-    description: "Adicionar título",
+    title: "Responsabilidade socioambiental",
+    icon: GlobeAmericasIcon,
   },
   {
     color: "gray",
-    title: "Title",
-    icon: ChatBubbleBottomCenterTextIcon,
-    description: "Adicionar título",
+    title: "Valorização das pessoas e da vida",
+    icon: UserGroupIcon,
   },
 ];
 

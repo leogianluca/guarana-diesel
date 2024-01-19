@@ -77,11 +77,18 @@ export function Home() {
               >
                 SOBRE NÓS
               </Typography>
-              <Typography className="mb-8 font-normal text-justify text-blue-gray-500">
+              <Typography className="mb-4 font-normal text-justify text-blue-gray-500">
                 A Guarana Diesel, também conhecida como GD Serviços Engenharia e Transportes, é uma empresa
                 especializada em uma ampla gama de atividades, com ênfase na conservação de rodovias. A empresa conta com uma equipe
                 altamente qualificada e preparada para executar suas tarefas, sempre com o objetivo de proporcionar o melhor resultado
                 possível aos clientes.
+              </Typography>
+              <Typography className="mb-8 font-normal text-justify text-blue-gray-500">
+                <ul class="list-disc list-inside space-y-2">
+                  <li><strong>MISSÃO</strong></li>
+                  <li><strong>VISÃO</strong></li>
+                  <li><strong>VALORES</strong></li>
+                </ul>
               </Typography>
 
               <a
