@@ -147,7 +147,6 @@ export function Contact() {
                     value={phone}
                     onChange={handleInputChange}
                     minLength={MIN_PHONE_LENGHT}
-                    required
                   />
 
                   <Input

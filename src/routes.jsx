@@ -10,6 +10,7 @@ import {
   ContainmentDevices,
   EmbankmentsAndRetainingStructures,
   DrainageAndOACs,
+  Blog,
 } from "@/pages";
 
 export const routes = [
@@ -45,34 +46,40 @@ export const routes = [
     element: <Contact />,
   },
   {
-    name: "Serviços",
+    name: "GreenAreas",
     path: "/servicos/areas-verdes",
     element: <GreenAreas />,
     hidden: true,
   },
   {
-    name: "Serviços",
+    name: "VerticalSignage",
     path: "/servicos/sinalizacao-vertical",
     element: <VerticalSignage />,
     hidden: true,
   },
   {
-    name: "Serviços",
+    name: "ContainmentDevices",
     path: "/servicos/dispositivos-de-contencao",
     element: <ContainmentDevices />,
     hidden: true,
   },
   {
-    name: "Serviços",
+    name: "EmbankmentsAndRetainingStructures",
     path: "/servicos/terraplenos-e-estruturas-de-contencao",
     element: <EmbankmentsAndRetainingStructures />,
     hidden: true,
   },
   {
-    name: "Serviços",
+    name: "DrainageAndOACs",
     path: "/servicos/drenagem-e-oacs",
     element: <DrainageAndOACs />,
     hidden: true,
+  },
+  {
+    name: "Blog",
+    path: "/restrito/post",
+    element: <Blog />,
+    // hidden: true,
   },
 ];
 

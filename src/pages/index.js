@@ -2,6 +2,7 @@ export * from "@/pages/home";
 export * from "@/pages/about";
 export * from "@/pages/contact_us";
 export * from "@/pages/news";
+export * from "@/pages/blog";
 export * from "@/pages/news-detail";
 export * from "@/pages/service.jsx";
 export * from "@/pages/serviceSubPage/ContainmentDevices";
