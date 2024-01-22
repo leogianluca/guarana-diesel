@@ -101,7 +101,7 @@ export function Home() {
             <div className="mx-auto mt-24 flex w-full justify-center px-4 md:w-4/12 lg:mt-0">
               <img
                 alt="Card Image"
-                src="/img/about.jpeg"
+                src="/img/about.jpg"
                 className="h-full w-full rounded"
               />
             </div>

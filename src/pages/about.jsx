@@ -13,17 +13,17 @@ export function About() {
         <div className="container mx-auto">
           <Typography
             variant="h3"
-            className="mb-3 font-bold"
+            className="mb-10 font-bold"
             color="blue-gray"
           >
             NOSSA HISTÓRIA
             <hr className="w-16 border-2 border-blue-500 mb-4" />
           </Typography>
 
-          <div className="mx-auto mt-32 flex w-full justify-center px-4 md:w-6/12 lg:mt-0">
+          <div className="mx-auto mt-40 flex justify-center px-4 md:w-12/12 lg:mt-0">
             <img
               alt="Card Image"
-              src="/img/abount1.png"
+              src="/img/abount1.jpeg"
               className="h-full w-full rounded"
             />
           </div>
