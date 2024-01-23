@@ -10,7 +10,7 @@ export function News() {
   useEffect(() => {
     async function fetchPosts() {
       try {
-        const response = await axios.get("http://localhost:3000/posts/9");
+        const response = await axios.get("http://https://guaranadiesel-api.onrender.com/posts/9");
         setPosts(response.data);
       } catch (error) {
         // console.error("Failed to fetch posts:", error);

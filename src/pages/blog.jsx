@@ -61,7 +61,7 @@ export function Blog() {
     
     try {
       // Envia os dados do formulário para a API usando a função fetch
-      const response = await fetch('http://localhost:3000/posts', {
+      const response = await fetch('http://https://guaranadiesel-api.onrender.com/posts', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
