@@ -24,12 +24,12 @@ export function VerticalSignage() {
           </div>
 
           <div className="mt-12 flex flex-wrap items-center">
-            <div class="space-y-4">
+            <div className="space-y-4">
               <p>Os dispositivos de segurança, são um conjunto de sinais de trânsito e dispositivos de segurança colocados na via pública com o objetivo de garantir sua adequada utilização, possibilitando melhor fluidez no trânsito e maior segurança dos usuários de veículos que nela circulam. </p>
               <p>Uma sinalização eficiente deve atrair a atenção do condutor, transmitir mensagens simples ao usuário, além de ser vista a uma distância suficiente a ponto de permitir manobras com segurança.</p>
               <p>Placas de sinalização sem conservação ou com conservação precária perdem sua eficácia como dispositivos de controle de tráfego, podendo induzir ao desrespeito e dificultar a ação fiscalizadora do órgão ou entidade executivo de trânsito. As placas de sinalização devem ser mantidas na posição apropriada, sempre limpas e legíveis.</p>
               <p>Os principais serviços realizados em caráter corretivo e preventivo para garantir a funcionalidade da Sinalização Vertical:</p>
-              <ul class="list-disc list-inside space-y-2">
+              <ul className="list-disc list-inside space-y-2">
                 <li>Implantação de sinalização vertical.</li>
                 <li>Substituição de Sinalização avariada.</li>
                 <li>Lavagem da Sinalização.</li>

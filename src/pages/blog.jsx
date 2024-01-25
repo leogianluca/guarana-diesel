@@ -8,9 +8,6 @@ import {
 import axios from "axios";
 
 export function Blog() {
-  const MIN_TITLE_LENGTH = 3;
-  const MIN_MESSAGE_LENGTH = 20;
-
   const [formValues, setFormValues] = useState({
     title: '',
     imgUrl: '',
@@ -20,11 +17,11 @@ export function Blog() {
   const { title, imgUrl, message } = formValues;
 
   const handleInputChange = (e) => {
-    setFormValues({
-      ...formValues,
-      [e.target.title]: e.target.value,
-      [e.target.imgUrl]: e.target.value,
-    });
+    const { name, value } = e.target;
+    setFormValues((prevState) => ({
+      ...prevState,
+      [name]: value,
+    }));
   };
 
   const handleTextAreaChange = (e) => {
@@ -34,12 +31,12 @@ export function Blog() {
     });
   };
 
-  const isBlank = (title, imgUrl, message) => {
-    if (title === '') {
+  const isBlank = () => {
+    if (formValues.title === '') {
       return alert('O título não pode estar vazio');
-    } else if (imgUrl === '') {
+    } else if (formValues.imgUrl === '') {
       return alert('As links das imagens não podem estar vazios');
-    } else if (message === '') {
+    } else if (formValues.message === '') {
       return alert('A descrição não pode estar vazia');
     } else {
       return alert('O formulário não pode ser enviado em branco');
@@ -49,7 +46,7 @@ export function Blog() {
   const handleSubmit = async (e) => {
     e.preventDefault();
 
-    isBlank(title, imgUrl, message)
+    isBlank()
 
     const imgUrlArray = imgUrl.split(';');
 
@@ -104,7 +101,7 @@ export function Blog() {
       <section className="bg-white px-4 pb-12">
         <div className="container mx-auto">
           <form className="mx-auto w-full mt-12">
-            <div className="mb-8 flex flex-col gap-8 md:flex-row md:gap-4">
+            <div className="mb-8">
               <Input
                 variant="outlined"
                 size="lg"
@@ -112,12 +109,11 @@ export function Blog() {
                 name="title"
                 value={title}
                 onChange={handleInputChange}
-                minLength={MIN_TITLE_LENGTH}
                 required
               />
             </div>
 
-            <div className="mb-8 flex flex-col gap-8 md:flex-row md:gap-4">
+            <div className="mb-8">
               <Input
                 variant="outlined"
                 size="lg"
@@ -137,7 +133,6 @@ export function Blog() {
               name="message"
               value={message}
               onChange={handleTextAreaChange}
-              minLength={MIN_MESSAGE_LENGTH}
               required
             />
 

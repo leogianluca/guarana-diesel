@@ -24,16 +24,16 @@ export function ContainmentDevices() {
           </div>
 
           <div className="mt-12 flex flex-wrap items-center">
-            <div class="space-y-4">
+            <div className="space-y-4">
               <p>Em razão do crescimento desenfreado dos índices de acidentes de trânsito, envolvendo milhões de pessoas em todo o mundo, a cada dia que passa, torna-se necessário a utilização de dispositivos de contenção para reduzir a gravidade do acidente, impedir que os veículos invadam lugares de risco ou alcancem obstáculos fixos.</p>
               <p>Sendo que a manutenção correta do dispositivo de contenção é responsável pelo sucesso e a efetividade de sua utilização.</p>
               <p>Os principais serviços realizados:</p>
-              <ul class="list-disc list-inside space-y-2">
+              <ul className="list-disc list-inside space-y-2">
                 <li>Implantação/remoção de defensas metálicas.</li>
                 <li>Implantação de atenuadores de impacto.</li>
               </ul>
               <p>Principais cuidados na manutenção:</p>
-              <ul class="list-disc list-inside space-y-2">
+              <ul className="list-disc list-inside space-y-2">
                 <li>Os componentes das defensas não devem apresentar arestas ou cantos vivos voltados contra o fluxo de tráfego.</li>
                 <li>Os postes das defensas devem ser enterrados/cravados por sistema de percussão, assegurando adequado atrito lateral.</li>
                 <li>A fixação do conjunto lâmina / postes / parafusos deve garantir o funcionamento do dispositivo.</li>

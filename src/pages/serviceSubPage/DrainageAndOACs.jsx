@@ -24,10 +24,10 @@ export function DrainageAndOACs() {
           </div>
 
           <div className="mt-12 flex flex-wrap items-center">
-            <div class="space-y-4">
+            <div className="space-y-4">
               <p>O sistema de drenagem de uma rodovia tem por objetivo a captação e remoção das águas que escoam superficialmente sobre as estradas e faixa adjacentes. Sendo que as águas superficiais são captadas e conduzidas para fora do corpo estradal, ou para locais apropriados de deságue seguro, para evitar a sua acumulação na estrada, evitando aquaplanagem, bem como visando proporcionar estabilidade aos maciços de terra que constituem a infraestrutura e não causar erosão.</p>
               <p>Os principais serviços realizados em caráter corretivo e preventivo para garantir a funcionalidade do sistema de drenagem são:</p>
-              <ul class="list-disc list-inside space-y-2">
+              <ul className="list-disc list-inside space-y-2">
                 <li>Limpeza/Desobstrução.</li>
                 <li>Reparação.</li>
                 <li>Implantação de novos dispositivos.</li>
@@ -38,7 +38,7 @@ export function DrainageAndOACs() {
                 <li>Construir Tampa.</li>
               </ul>
               <p>Principais benefícios da manutenção de drenagem:</p>
-              <ul class="list-disc list-inside space-y-2">
+              <ul className="list-disc list-inside space-y-2">
                 <li>Manter o funcionamento do sistema de drenagem da rodovia em perfeitas condições, evitando diversos problemas:</li>
                 <li>Evita alagamento da faixa de domínio.</li>
                 <li>Evita ocorrências de aquaplanagem.</li>

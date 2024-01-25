@@ -24,11 +24,11 @@ export function EmbankmentsAndRetainingStructures() {
           </div>
 
           <div className="mt-12 flex flex-wrap items-center">
-            <div class="space-y-4">
+            <div className="space-y-4">
               <p>A conservação dos terraplenos de uma rodovia e das estruturas de contenção tem por finalidade proteger o leito da estrada e manter as encostas dentro dos padrões normais previstos, preservando-as contra qualquer desagregação, procurando garantir a estabilidade dos taludes de aterros e de cortes e maciços naturais, visando à segurança e boas condições de tráfego.</p>
               <p>Apesar da realização de monitorações periódicas dos terraplenos existentes ao longo da rodovia, é comum durante o período de chuva a instabilidade de alguns taludes em função da saturação do solo.</p>
               <p>Principais serviços de manutenção de terraplenos realizados:</p>
-              <ul class="list-disc list-inside space-y-2">
+              <ul className="list-disc list-inside space-y-2">
                 <li>Remoção de deslizamentos.</li>
                 <li>Limpeza dos dispositivos de drenagem.</li>
                 <li>Inspeção e reparos das estruturas de contenção da rodovia.</li>

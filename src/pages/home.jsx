@@ -84,7 +84,7 @@ export function Home() {
                 possível aos clientes.
               </Typography>
               <Typography className="mb-8 font-normal text-justify text-blue-gray-500">
-                <ul class="list-disc list-inside space-y-2">
+                <ul className="list-disc list-inside space-y-2">
                   <li><strong>MISSÃO</strong></li>
                   <li><strong>VISÃO</strong></li>
                   <li><strong>VALORES</strong></li>

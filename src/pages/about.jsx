@@ -102,7 +102,7 @@ export function About() {
               <hr className="w-16 border-2 border-blue-500 mb-4" />
             </Typography>
 
-            <ul class="list-disc list-inside space-y-2  leading-10">
+            <ul className="list-disc list-inside space-y-2  leading-10">
               <li>
                 <strong>Ética: </strong>
                 Respeito mútuo entre líderes e liderados, integrantes e usuários, fornecedores e sociedade, empresa e comunidades, mantendo as relações fundadas na honestidade, empatia e cooperação para garantir o bom clima no ambiente de trabalho e imagem organizacional positiva.

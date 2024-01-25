@@ -24,11 +24,11 @@ export function GreenAreas() {
           </div>
 
           <div className="mt-12 flex flex-wrap items-center">
-            <div class="space-y-4">
+            <div className="space-y-4">
               <p>Consiste nos serviços de limpeza e na conservação de todas as áreas e locais que compõem o patrimônio locado dentro da faixa de domínio da rodovia. Onde podemos relacionar os seguintes serviços: poda, capina, despraguejamento, refilamento, aceiro, corte de árvores, varrição e limpeza.</p>
               <p>Serviços que devem ser executados com equipamentos e mão de obra especializada que respeitem as condições operacionais, ambientais e atendam os padrões de desempenho de cada rodovia.</p>
               <p>Descrição dos serviços de rotina essenciais para manter as condições mínimas de manutenção e segurança das rodovias:</p>
-              <ul class="list-disc list-inside space-y-2">
+              <ul className="list-disc list-inside space-y-2">
                 <li>Roçada: pode ser realizada de forma mecânica ou manual, sendo realizado o número de cortes necessários para manter o revestimento vegetal das áreas com altura uniforme e dentro dos padrões estabelecidos em toda sua extensão, em qualquer época do ano.</li>
                 <li>Capina e despraguejamento: compreende o ato de remover manualmente as ervas daninhas, de todas as áreas inclusive jardins, pátios e pistas pavimentadas, bem como áreas próximas às barreiras de concreto e defensas metálicas, replantando grama onde for necessário.</li>
                 <li>Refilamento: compreende o ato de remover a grama que invade as áreas pavimentadas e bordos de pista, proporcionando que a drenagem do pavimento funcione de forma plena.</li>
